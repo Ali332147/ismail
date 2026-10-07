@@ -172,3 +172,32 @@ body{animation:pageEnter .7s var(--motion-ease) both}
  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
  .reveal{opacity:1!important;transform:none!important;filter:none!important}
 }
+
+/* Center the complete website inside a professional max-width container */
+body{background:#eef2f5}
+.header, main>section, footer{width:min(1240px,94%);margin-left:auto;margin-right:auto}
+.header{border-radius:0 0 12px 12px}
+main>section:first-child{border-radius:12px 12px 0 0}
+footer{border-radius:0 0 12px 12px}
+@media(max-width:700px){.header,main>section,footer{width:100%;border-radius:0}}
+
+/* Professional text alignment */
+.hero p,
+.service-card p,
+.about-content p,
+.contact-info > p,
+.form-note {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+@media (max-width: 560px) {
+  .hero p,
+  .service-card p,
+  .about-content p,
+  .contact-info > p,
+  .form-note {
+    text-align: justify;
+    text-justify: inter-word;
+  }
+}
